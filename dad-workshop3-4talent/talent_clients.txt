@@ -1,0 +1,131 @@
+agency,name,Date joined,Daily rate,notes
+Potters Talent Agency,Earleen Grimaldi,01/04/2013,350,none
+Potters Talent Agency,Lisette Cullins,25/02/2014,355,none
+Potters Talent Agency,Sudie Islas,21/05/2013,641,none
+Geordie Talent Inc,Velia Rud,14/11/2014,589,none
+Geordie Talent Inc,Rea Widman,11/09/2014,729,none
+Geordie Talent Inc,Tatiana Block,17/04/2014,397,none
+Carter-Smith Ltd,Ashly Dankert,13/07/2014,372,none
+Carter-Smith Ltd,Florinda Duplessis,30/03/2014,450,none
+Carter-Smith Ltd,Nicolette Kalas,15/04/2013,470,vegetarian
+A La Mode Modelling,Amee Tillis,06/11/2014,721,none
+A La Mode Modelling,Lakesha Menser,09/02/2014,469,none
+A La Mode Modelling,Reagan Ater,31/05/2014,394,none
+Ponsonby Smythe Talent,Flor Luz,21/09/2013,537,none
+Ponsonby Smythe Talent,Lea Angstadt,29/05/2013,462,none
+Ponsonby Smythe Talent,Adell Mahurin,16/11/2014,727,none
+Cooper Jones Ltd,Lakeshia Vitiello,20/11/2013,378,none
+Cooper Jones Ltd,Retta Norling,27/01/2010,591,none
+Cooper Jones Ltd,Scottie Baskette,15/09/2014,724,none
+The Does,Cheryl Traw,21/09/2014,502,outsize modelling
+The Does,Krista Strycker,28/04/2014,607,none
+The Does,Golden Warnecke,14/04/2014,569,none
+Sheldon Models,Hye Ayer,29/12/2013,741,vegetarian
+Sheldon Models,Sheba Alberto,28/05/2013,556,none
+Sheldon Models,Valene Iwamoto,20/01/2014,651,none
+A Cut Above,Chia Weary,30/01/2010,669,none
+A Cut Above,Rosemarie Peach,05/01/2014,740,none
+A Cut Above,Tennille Riegel,26/07/2014,458,child model - 6 y/o
+Harper Fring Peterson,Enola Spiro,13/04/2013,609,none
+Harper Fring Peterson,Irish Donnell,19/05/2014,408,none
+Harper Fring Peterson,Leonor Villicana,02/04/2014,700,none
+Martin Modelling,Gail Demmer,16/11/2013,601,none
+Martin Modelling,Keira Shubert,09/02/2014,455,none
+Martin Modelling,Cortney Breazeale,24/10/2014,558,none
+Queensbury Rules,Kelsi Marczak,04/02/2014,373,none
+Queensbury Rules,Laureen Dooling,17/07/2013,542,none
+Queensbury Rules,Stefani Olivarria,15/01/2014,485,none
+Notts Talent,Grisel Wineinger,30/09/2013,449,none
+Notts Talent,Dione Featherstone,13/05/2013,635,vegetarian
+Notts Talent,Krishna Wohlford,23/09/2014,427,none
+The Earl Ltd,Laverna Cahalan,12/01/2010,676,none
+The Earl Ltd,Maudie Delbosque,10/05/2013,493,none
+The Earl Ltd,Kira Margolin,06/11/2013,464,none
+Island Models,Anja Boschee,29/01/2014,505,none
+Island Models,Mitchell Modeste,14/08/2013,402,none
+Island Models,Lauri Menke,10/04/2014,728,none
+Ford Modine Talent Agency,Tandy Kimrey,18/01/2014,527,none
+Ford Modine Talent Agency,Shayla Armor,28/06/2013,563,none
+Ford Modine Talent Agency,Merle Rexrode,21/08/2014,463,child model - 10 y/o
+Preston People,Augusta Souther,24/08/2013,447,none
+Preston People,Shawana Erath,05/04/2013,723,none
+Preston People,Syble Rayno,25/04/2013,622,none
+Talent Incoporated,Fred Rhode,02/08/2014,441,none
+Talent Incoporated,Kaycee Maag,25/08/2014,647,none
+Talent Incoporated,Amiee Packard,05/11/2013,712,none
+Galley Models,Alleen Romriell,05/02/2014,522,vegetarian
+Galley Models,Angeles Brace,31/12/2014,734,none
+Galley Models,Marianna Hayer,30/09/2014,616,none
+Bob Hambrook Talent,Ethel Rushing,05/08/2014,413,none
+Bob Hambrook Talent,Reatha Yonker,01/10/2014,491,none
+Bob Hambrook Talent,Pattie Gathman,15/03/2014,467,none
+Mullins and Robbins,Genesis Huckaby,10/11/2014,546,Stage name - real name is Gertrude Perkins
+Mullins and Robbins,Enedina Wimberley,11/07/2014,611,none
+Mullins and Robbins,Lavona Caughman,13/02/2014,739,none
+Oxford Models,Angelo Mazzucco,28/06/2013,417,none
+Oxford Models,Paulene Havard,07/07/2013,666,none
+Oxford Models,Audrey Shao,25/04/2014,679,none
+Quentin Cumberside Ltd,Porsche Slusser,16/10/2014,351,none
+Quentin Cumberside Ltd,Bev Laible,04/08/2014,395,none
+Quentin Cumberside Ltd,Cecila Lapinski,27/08/2014,670,none
+Potters Talent Agency,Cassidy Harnage,27/08/2014,477,none
+Geordie Talent Inc,Dario Buttram,24/07/2013,370,none
+Carter-Smith Ltd,Julius Leander,10/05/2014,619,none
+A La Mode Modelling,Jc Clothier,14/12/2014,514,none
+Ponsonby Smythe Talent,Wilber Duwe,07/05/2014,686,none
+Cooper Jones Ltd,Howard Melville,25/02/2014,368,none
+The Does,Geoffrey Banister,22/01/2010,716,vegetarian
+Sheldon Models,Olen Benware,16/06/2013,724,none
+A Cut Above,Michel Provencher,08/09/2014,457,none
+Harper Fring Peterson,Avery Laabs,07/10/2013,608,child model - 8 y/o
+Martin Modelling,Carlton Detamore,29/03/2010,436,none
+Queensbury Rules,Scot Magruder,24/12/2014,414,none
+Notts Talent,Omer Long,25/05/2013,468,has an incredibly rude sounding name
+The Earl Ltd,Dustin Lorusso,22/04/2013,546,none
+Island Models,Truman Cangelosi,13/11/2014,351,none
+Ford Modine Talent Agency,Leandro Bonsall,12/01/2014,362,none
+Preston People,Noel Kerekes,01/11/2013,574,body builder
+Talent Incoporated,Billy Heise,02/03/2010,563,none
+Galley Models,Frank Geesey,05/05/2013,499,none
+Bob Hambrook Talent,Thurman Whitlock,10/07/2013,677,none
+Mullins and Robbins,Alonso Ketcham,03/08/2013,552,none
+Oxford Models,Eliseo Weld,27/10/2014,521,outsize modelling
+Quentin Cumberside Ltd,Renaldo Selden,19/06/2014,707,none
+Harper Fring Peterson,Jospeh Rollin,03/08/2014,409,none
+Martin Modelling,Wendell Rojas,25/01/2010,565,vegetarian
+Queensbury Rules,Herman Agbayani,20/12/2014,707,none
+Notts Talent,Joan Mckinnon,17/10/2013,725,none
+The Earl Ltd,Isiah Mcadams,12/12/2014,437,none
+Quentin Cumberside Ltd,Sam Harbour,17/10/2013,735,none
+Ford Modine Talent Agency,Frankie Holdsworth,18/03/2010,515,none
+Geordie Talent Inc,Lewis Dionisio,21/06/2013,711,none
+Clive Jones,Diving Hex And The Content Doll,21/10/2014,1200,none
+Banding Together,Stooge Gnat,05/11/2014,1845,none
+Banding Together,Mannequin Skillet,05/05/2013,1288,none
+Clive Jones,Member Farmer,25/01/2010,1339,none
+Clive Jones,Buzz Of The Reputation,27/05/2014,1205,none
+Clive Jones,At Logistic,05/09/2013,1711,none
+Banding Together,Running Stingray,08/09/2013,2269,none
+Banding Together,Thrasher Of Boring,28/04/2014,1950,none
+Banding Together,Disrupted Of The Neon,07/03/2010,1209,none
+Banding Together,Mute Except November,09/07/2013,2079,none
+Quentin Cumberside Ltd,Unborn Misery,13/04/2013,1671,Sam Harbour is a member of this band
+Banding Together,Elemental Overdose,13/04/2014,1498,none
+Clive Jones,Drenched Appeal Of The Broadband Duo,08/05/2013,1274,none
+Banding Together,Droopy Goggles,17/04/2014,2524,none
+Banding Together,Working Shark,07/07/2014,1413,none
+Notts Talent,Ambitious Ambush,27/03/2010,2122,none
+The Earl Ltd,Asphalt Disadvantage,25/09/2013,2014,none
+Clive Jones,Knowing Of The Punky,09/07/2013,1833,none
+Ponsonby Smythe Talent,Minty Post-modern,14/05/2013,2534,none
+Cooper Jones Ltd,Gaming Wound,24/08/2013,1249,none
+The Does,Dreamy Dialog,27/08/2013,2159,none
+Clive Jones,Altered Movement,30/10/2014,2189,none
+Clive Jones,Bogus Creek Of The Purifying Brigade,17/12/2013,2452,none
+Clive Jones,Dumping Plain,28/11/2014,2339,none
+Bob Hambrook Talent,Hero Freeway,17/02/2010,1988,none
+Mullins and Robbins,Enlightened Iguana,08/06/2014,2156,none
+Potters Talent Agency,Albert Rin-tin-tin,30/10/2013,1571,none
+Geordie Talent Inc,First Baptist,28/10/2014,2028,none
+Carter-Smith Ltd,Absolute Devil,31/05/2013,2545,none
+The Earl Ltd,On Wishbone,15/06/2013,1634,none
