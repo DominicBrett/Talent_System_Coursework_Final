@@ -3,6 +3,7 @@
  * and open the template in the editor.
  */
 package control;
+import javax.swing.JTextArea;
 import view.ApplicationViewer;
 import model.ApplicationModel;
 
@@ -14,9 +15,21 @@ import model.ApplicationModel;
  * @author dave
  */
 public class ApplicationControl {
-      
+       
     public static void main(String[] args){
-     
+      ApplicationModel am = new ApplicationModel();
+      ApplicationModel.setInstance(am);
+      ApplicationModel.getInstance().readAgencies("talent_agencies.txt","talent_clients.txt");
+
+    System.out.print(ApplicationModel.getInstance().printClients());
+     System.out.println("\n" + "\n" + "\n" + "_________________________________" + "\n" + "\n" + ApplicationModel.getInstance().printAgencies()); 
+       ApplicationViewer av = new ApplicationViewer();
+      ApplicationViewer.setInstance(av);
+      ApplicationViewer.getInstance().jFramePrint();
+       
+        
+   
+      
     }
 }
  
