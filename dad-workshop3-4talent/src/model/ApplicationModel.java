@@ -48,12 +48,18 @@ public class ApplicationModel {
      * @return the one instance of ApplicationModel
      */
 
-    String txtFile = "Talent_agencies.txt";
+    
+     /**
+     * Important:
+     * readAgencies(String fileName, String fileName2) creates objects for both the agencies and clients. fileName is for "talent_agencies.txt"
+     * while fileName2 is for "talent_clients.txt".
+     */
     BufferedReader infile = null;
     String txtString;
     int i = 0;
-   public void readAgencies(String fileName)
-    {
+    
+   public void readAgencies(String fileName, String fileName2)
+   {
     try {
     infile = new BufferedReader(new FileReader(fileName));
     // Reads first line so while statment dosen't
@@ -85,26 +91,23 @@ public class ApplicationModel {
             }
         }
     }
-    }
-      String txtFile2 = "Talent_agencies.txt";
-    BufferedReader infile2 = null;
-    String txtString2;
+    
+    infile = null;
+    txtString = "";
     int i2 = 0;
-   public void readClients(String fileName)
-   {
-        try {
-    infile = new BufferedReader(new FileReader(fileName));
+    try {
+    infile = new BufferedReader(new FileReader(fileName2));
     // Reads first line so while statment dosen't
-        txtString = infile2.readLine();
+        txtString = infile.readLine();
 
-        while ((txtString = infile2.readLine()) != null) {
+        while ((txtString = infile.readLine()) != null) {
             Client client = new Client(txtString);
 
             if (client != null) {
                 clients.add(client);
                 i2++;
+               
             }
-            
         }
     } 
     catch(IOException e)
@@ -114,15 +117,19 @@ public class ApplicationModel {
     }
     finally
     {
-        if (infile2 != null) {
+        if (infile != null) {
             try {
-                infile2.close();
+                infile.close();
+                sortAgenciesByName();
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
     }
-   }
+}
+    
+  
+    
    
    
 public String printAgencies()
@@ -138,13 +145,18 @@ public void sortAgenciesByName()
 {
  Collections.sort(agencies, (Agency a, Agency b) -> a.getName().compareToIgnoreCase(b.getName()));
 }
+public void sortAgenciesByNameAndClient()
+{
+ Collections.sort(clients, (Client a, Client b) -> a.getClient().compareToIgnoreCase(b.getClient()));
+}
+
 public String printClients()
 {
     String output = "";
     for (Client a: clients)
     {
         output += a.toString();
-    }
+    }   
     return output;
 }   
 
