@@ -49,16 +49,12 @@ public class ApplicationModel {
      */
 
     
-     /**
-     * Important:
-     * readAgencies(String fileName, String fileName2) creates objects for both the agencies and clients. fileName is for "talent_agencies.txt"
-     * while fileName2 is for "talent_clients.txt".
-     */
+ 
     BufferedReader infile = null;
     String txtString;
     int i = 0;
     
-   public void readAgencies(String fileName, String fileName2)
+   public void readAgencies(String fileName)
    {
     try {
     infile = new BufferedReader(new FileReader(fileName));
@@ -92,11 +88,15 @@ public class ApplicationModel {
         }
     }
     
-    infile = null;
+    
+}
+    public void readClients(String fileName)
+    {
+        infile = null;
     txtString = "";
     int i2 = 0;
     try {
-    infile = new BufferedReader(new FileReader(fileName2));
+    infile = new BufferedReader(new FileReader(fileName));
     // Reads first line so while statment dosen't
         txtString = infile.readLine();
 
@@ -108,6 +108,7 @@ public class ApplicationModel {
                 i2++;
                
             }
+          
         }
     } 
     catch(IOException e)
@@ -120,14 +121,13 @@ public class ApplicationModel {
         if (infile != null) {
             try {
                 infile.close();
-                sortAgenciesByName();
+                sortAgenciesByNameAndClient();
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
     }
-}
-    
+    }
   
     
    
@@ -156,8 +156,10 @@ public String printClients()
     for (Client a: clients)
     {
         output += a.toString();
-    }   
+    } 
+   
     return output;
+    
 }   
 
 
