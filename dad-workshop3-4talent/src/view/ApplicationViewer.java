@@ -15,7 +15,19 @@ import javax.swing.*;
  * @author dave
  */
 public class ApplicationViewer extends JFrame {
+   
+    private JTextArea agencyDisplay = new JTextArea();
+//    
+public void jFramePrint()
+{
+    this.add(agencyDisplay);
+    this.setSize(600,600);
+    this.agencyDisplay.append(ApplicationModel.getInstance().printAgencies());
+////    this.setVisible(true);
+    
+}
     // this should hold a reference to the one and only instance of an ApplicationViewer object
+       
    private static ApplicationViewer instance;
    
     /**
@@ -26,6 +38,7 @@ public class ApplicationViewer extends JFrame {
         return instance;
     }
 
+
     // use a phony Singleton to make the instance of the Viewer available throughout the application
      /**
      * For setting the only instance of ApplicationViewer
@@ -35,6 +48,15 @@ public class ApplicationViewer extends JFrame {
     public static void setInstance(ApplicationViewer instance) {
         ApplicationViewer.instance = instance;
     }
+
+    
+
+        
+      
+    
+  
+    
+    
 }
 
     
