@@ -5,6 +5,8 @@
 package view;
 import model.ApplicationModel;
 import javax.swing.*;
+
+
 /**
  * The Application Viewer is created by ApplicationControl
  * when the Application starts
@@ -16,15 +18,28 @@ import javax.swing.*;
  */
 public class ApplicationViewer extends JFrame {
    
-    private JTextArea textDisplay = new JTextArea();
+    private JTabbedPane tabs = new JTabbedPane();
+     private JTextArea agenciesDisplay = new JTextArea();
+        private JTextArea clientsDisplay = new JTextArea();
+   
+  
+   
  
 //    
 public void jFramePrint()
 {
-    this.add(textDisplay);
-    this.setSize(600,600);
-    this.textDisplay.append(ApplicationModel.getInstance().printAgencies());
-    this.textDisplay.append(ApplicationModel.getInstance().printClients());
+   
+    
+    this.setSize(1920,1040);
+    this.setTitle("Talent Agency Viewer");
+    this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+   
+    agenciesDisplay.append(ApplicationModel.getInstance().printAgencies());
+    clientsDisplay.append(ApplicationModel.getInstance().printClients());
+  
+    tabs.add("Agencies", agenciesDisplay);
+    tabs.add("Clients", clientsDisplay);
+    this.add(tabs);
  this.setVisible(true);
     
 }
