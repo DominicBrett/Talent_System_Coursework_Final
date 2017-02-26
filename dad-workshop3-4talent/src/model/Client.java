@@ -37,7 +37,7 @@ public class Client {
       @Override
     public String toString() {
    
-        return client + "	"+ "\n" + location + "	" + "\n" + date + "	" + "\n" + num  + "	" + "\n" + notes+ "\n";
+        return client + "	"+ location + "	" + date + "	" + num  + "	" + notes+ "\n";
     }
           public String getName1() {
         return name1;
