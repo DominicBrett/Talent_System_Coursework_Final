@@ -21,8 +21,8 @@ public class ApplicationControl {
       ApplicationModel.setInstance(am);
       ApplicationModel.getInstance().readAgencies("talent_agencies.txt","talent_clients.txt");
 
-    System.out.print(ApplicationModel.getInstance().printClients());
-     System.out.println("\n" + "\n" + "\n" + "_________________________________" + "\n" + "\n" + ApplicationModel.getInstance().printAgencies()); 
+   /** System.out.print(ApplicationModel.getInstance().printClients());
+     System.out.println("\n" + "\n" + "\n" + "_________________________________" + "\n" + "\n" + ApplicationModel.getInstance().printAgencies()); */
        ApplicationViewer av = new ApplicationViewer();
       ApplicationViewer.setInstance(av);
       ApplicationViewer.getInstance().jFramePrint();
