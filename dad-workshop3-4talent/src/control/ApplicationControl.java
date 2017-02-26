@@ -19,10 +19,8 @@ public class ApplicationControl {
     public static void main(String[] args){
       ApplicationModel am = new ApplicationModel();
       ApplicationModel.setInstance(am);
-      ApplicationModel.getInstance().readAgencies("talent_agencies.txt","talent_clients.txt");
-
-   /** System.out.print(ApplicationModel.getInstance().printClients());
-     System.out.println("\n" + "\n" + "\n" + "_________________________________" + "\n" + "\n" + ApplicationModel.getInstance().printAgencies()); */
+      ApplicationModel.getInstance().readAgencies("talent_agencies.txt");
+      ApplicationModel.getInstance().readClients("talent_clients.txt");
        ApplicationViewer av = new ApplicationViewer();
       ApplicationViewer.setInstance(av);
       ApplicationViewer.getInstance().jFramePrint();
