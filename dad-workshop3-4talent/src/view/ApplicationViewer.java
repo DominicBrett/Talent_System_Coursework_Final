@@ -16,14 +16,16 @@ import javax.swing.*;
  */
 public class ApplicationViewer extends JFrame {
    
-    private JTextArea agencyDisplay = new JTextArea();
+    private JTextArea textDisplay = new JTextArea();
+ 
 //    
 public void jFramePrint()
 {
-    this.add(agencyDisplay);
+    this.add(textDisplay);
     this.setSize(600,600);
-    this.agencyDisplay.append(ApplicationModel.getInstance().printAgencies());
-////    this.setVisible(true);
+    this.textDisplay.append(ApplicationModel.getInstance().printAgencies());
+    this.textDisplay.append(ApplicationModel.getInstance().printClients());
+ this.setVisible(true);
     
 }
     // this should hold a reference to the one and only instance of an ApplicationViewer object
