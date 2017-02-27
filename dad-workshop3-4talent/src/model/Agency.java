@@ -46,11 +46,14 @@ public class Agency {
 
     @Override
     public String toString() {
+        if(address.equals(""))
+        {
       for (String element: addList)
       {
           address += element;
           address += "\n";
       }
+        }
         return name + "\n" + address +  dateJoined + "\n" +  dailyRate + "\n" +  notes + "\n" + "\n";
     }
     
