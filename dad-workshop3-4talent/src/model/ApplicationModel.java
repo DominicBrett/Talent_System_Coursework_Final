@@ -143,6 +143,24 @@ public String printAgencies()
     }
     return output;
 }
+public String printAgenciesSearch(String b)
+{
+    String output = "";
+    for (Agency a: agencies)
+    {
+        
+        //System.out.print(a.getName().compareToIgnoreCase(b));
+       if(a.getName().equalsIgnoreCase(b))
+       {
+        output += a.toString();
+      
+    }
+      
+    }
+     return output;
+   
+
+}
 public String printAgenciesZA()
 {
     Collections.sort(agencies, (Agency a, Agency b) -> b.getName().compareToIgnoreCase(a.getName()));
@@ -235,9 +253,23 @@ public String printAverageClientRate()
 
 public String printClients()
 {
+    Collections.sort(clients, (Client a, Client b) -> a.getAgency().compareToIgnoreCase(b.getAgency()));
     String output = ""; 
     for (Client a: clients)
     {
+        output += a.toString();
+    } 
+   
+    return output;
+    
+}   
+public String printClientsSortName()
+{
+    Collections.sort(clients, (Client a, Client b) -> a.getClient().compareToIgnoreCase(b.getClient()));
+    String output = ""; 
+    for (Client a: clients)
+    {
+         
         output += a.toString();
     } 
    
@@ -251,6 +283,21 @@ public String printClientsZA()
     for (Client a: clients)
     {
         output += a.toString();
+    } 
+   
+    return output;
+    
+}  
+public String printClientsSearch(String b)
+{
+    String output = ""; 
+    for (Client a: clients)
+    {
+         if(a.getAgency().equalsIgnoreCase(b) || a.getClient().equalsIgnoreCase(b))
+       {
+        output += a.toString();
+      
+    }
     } 
    
     return output;
