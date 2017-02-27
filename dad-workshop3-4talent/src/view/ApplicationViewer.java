@@ -28,8 +28,14 @@ public class ApplicationViewer extends JFrame {
         private JPanel controlPanel = new JPanel();
         private JButton azSort = new JButton("A/Z");
         private boolean aZ = true;
-        private JLabel southNote = new JLabel("Average Rating Sorting :       ");
-     
+          private boolean cName = true;
+        private JLabel southNote = new JLabel("All :       ");
+        private JTextField searchFeild = new JTextField();
+          private JLabel searchLabel = new JLabel("   Search Agencies & Clients :   ");
+                 private JButton searchButton = new JButton("Search");
+      private JButton searchParamReset = new JButton("Reset Search Filters");
+      private JButton sortClientName = new JButton("Order By Client Name");
+       private JLabel southClientLabel = new JLabel("Clients :       ");
  
 //    
 public void jFramePrint()
@@ -61,10 +67,57 @@ public void jFramePrint()
             
         }
     });
+    searchButton.addActionListener(new ActionListener() {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+           
+           String a = searchFeild.getText();
+           agenciesDisplay.setText(ApplicationModel.getInstance().printAgenciesSearch(a));
+           clientsDisplay.setText(ApplicationModel.getInstance().printClientsSearch(a));
+        }
+    });
+     searchParamReset.addActionListener(new ActionListener() {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+           
+          
+           agenciesDisplay.setText(ApplicationModel.getInstance().printAgencies());
+           clientsDisplay.setText(ApplicationModel.getInstance().printClients());
+           agenciesAverageDisplay.setText(ApplicationModel.getInstance().printAverageClientRate());
+        }
+    });
+     sortClientName.addActionListener(new ActionListener() {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            if (cName == true)
+            {
+                
+                clientsDisplay.setText(ApplicationModel.getInstance().printClientsSortName());
+               
+                sortClientName.setText("Order By Client Agency");
+                cName = false;
+            }
+            else
+            {
+                  clientsDisplay.setText(ApplicationModel.getInstance().printClients());
+               
+                sortClientName.setText("Order By Client Name");
+                cName = true;
+            }
+            
+        }
+    });
+        searchFeild.setColumns(50);
+    
         
     controlPanel.add(southNote);
     controlPanel.add(azSort);
-
+    controlPanel.add(southClientLabel);
+        controlPanel.add(sortClientName);
+    controlPanel.add(searchLabel);
+    controlPanel.add(searchFeild);
+    controlPanel.add(searchButton);
+    controlPanel.add(searchParamReset);
     this.setSize(1920,1040);
     this.setTitle("Talent Agency Viewer");
     this.setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -75,6 +128,7 @@ public void jFramePrint()
     tabs.add("Agencies", agenciesDisplay);
     tabs.add("Clients", clientsDisplay);
     tabs.add("Average Rating", agenciesAverageDisplay);
+
     this.add(tabs);
  this.setVisible(true);
     
