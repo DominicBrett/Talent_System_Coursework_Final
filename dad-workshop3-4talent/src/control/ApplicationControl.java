@@ -21,7 +21,7 @@ public class ApplicationControl {
       ApplicationModel.setInstance(am);
       ApplicationModel.getInstance().readAgencies("talent_agencies.txt");
       ApplicationModel.getInstance().readClients("talent_clients.txt");
-    System.out.print(ApplicationModel.getInstance().printAverageClientRate());
+   
        ApplicationViewer av = new ApplicationViewer();
       ApplicationViewer.setInstance(av);
       ApplicationViewer.getInstance().jFramePrint();
