@@ -28,7 +28,8 @@ public class ApplicationViewer extends JFrame {
         private JPanel controlPanel = new JPanel();
         private JButton azSort = new JButton("A/Z");
         private boolean aZ = true;
-   
+        private JLabel southNote = new JLabel("Average Rating Sorting :       ");
+     
  
 //    
 public void jFramePrint()
@@ -42,19 +43,28 @@ public void jFramePrint()
             if (aZ == true)
             {
                 agenciesAverageDisplay.setText(ApplicationModel.getInstance().printAverageZA());
+                clientsDisplay.setText(ApplicationModel.getInstance().printClientsZA());
+                agenciesDisplay.setText(ApplicationModel.getInstance().printAgenciesZA());
                 azSort.setText("A/Z");
                 aZ = false;
             }
             else
             {
                 agenciesAverageDisplay.setText(ApplicationModel.getInstance().printAverageClientRate());
+                ApplicationModel.getInstance().sortAgenciesByNameAndClient();
+                  clientsDisplay.setText(ApplicationModel.getInstance().printClients());
+                     ApplicationModel.getInstance().sortAgenciesByName();
+                       agenciesDisplay.setText(ApplicationModel.getInstance().printAgencies());
                 azSort.setText("Z/A");
                 aZ = true;
             }
             
         }
     });
+        
+    controlPanel.add(southNote);
     controlPanel.add(azSort);
+
     this.setSize(1920,1040);
     this.setTitle("Talent Agency Viewer");
     this.setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -69,16 +79,7 @@ public void jFramePrint()
  this.setVisible(true);
     
 }
-public ActionListener sortClick() {
-        ActionListener action = new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-               
-                
-            }
-        };
-                return action;
-        }
+
     // this should hold a reference to the one and only instance of an ApplicationViewer object
        
    private static ApplicationViewer instance;
