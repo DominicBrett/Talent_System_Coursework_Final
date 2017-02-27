@@ -143,6 +143,16 @@ public String printAgencies()
     }
     return output;
 }
+public String printAgenciesZA()
+{
+    Collections.sort(agencies, (Agency a, Agency b) -> b.getName().compareToIgnoreCase(a.getName()));
+    String output = "";
+    for (Agency a: agencies)
+    {
+        output += a.toString();
+    }
+    return output;
+}
 public void sortAgenciesByName()
 {
  Collections.sort(agencies, (Agency a, Agency b) -> a.getName().compareToIgnoreCase(b.getName()));
@@ -234,7 +244,18 @@ public String printClients()
     return output;
     
 }   
-
+public String printClientsZA()
+{
+     Collections.sort(clients, (Client a, Client b) -> b.getAgency().compareToIgnoreCase(a.getAgency()));
+    String output = ""; 
+    for (Client a: clients)
+    {
+        output += a.toString();
+    } 
+   
+    return output;
+    
+}  
 
     public static ApplicationModel getInstance() {
         return instance;
