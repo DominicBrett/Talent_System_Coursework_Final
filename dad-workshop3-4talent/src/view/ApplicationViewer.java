@@ -3,6 +3,9 @@
  * and open the template in the editor.
  */
 package view;
+import java.awt.BorderLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import model.ApplicationModel;
 import javax.swing.*;
 
@@ -22,14 +25,36 @@ public class ApplicationViewer extends JFrame {
      private JTextArea agenciesDisplay = new JTextArea();
         private JTextArea clientsDisplay = new JTextArea();
         private JTextArea agenciesAverageDisplay = new JTextArea();
-  
+        private JPanel controlPanel = new JPanel();
+        private JButton azSort = new JButton("A/Z");
+        private boolean aZ = true;
    
  
 //    
 public void jFramePrint()
 {
    
-    
+    this.setLayout(new BorderLayout());
+    this.add(controlPanel,BorderLayout.SOUTH);
+    azSort.addActionListener(new ActionListener() {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            if (aZ == true)
+            {
+                agenciesAverageDisplay.setText(ApplicationModel.getInstance().printAverageZA());
+                azSort.setText("A/Z");
+                aZ = false;
+            }
+            else
+            {
+                agenciesAverageDisplay.setText(ApplicationModel.getInstance().printAverageClientRate());
+                azSort.setText("Z/A");
+                aZ = true;
+            }
+            
+        }
+    });
+    controlPanel.add(azSort);
     this.setSize(1920,1040);
     this.setTitle("Talent Agency Viewer");
     this.setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -44,6 +69,16 @@ public void jFramePrint()
  this.setVisible(true);
     
 }
+public ActionListener sortClick() {
+        ActionListener action = new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+               
+                
+            }
+        };
+                return action;
+        }
     // this should hold a reference to the one and only instance of an ApplicationViewer object
        
    private static ApplicationViewer instance;
