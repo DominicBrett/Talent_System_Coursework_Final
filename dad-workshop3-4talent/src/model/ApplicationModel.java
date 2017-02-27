@@ -192,7 +192,7 @@ public String printAverageClientRate()
     {
        
         output += getAverageClientRate(a) + "\n";
-        System.out.print(getAverageClientRate(a));
+        
     }
 
     return output;
