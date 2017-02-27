@@ -151,6 +151,31 @@ public void sortAgenciesByNameAndClient()
 {
  Collections.sort(clients, (Client a, Client b) -> a.getAgency().compareToIgnoreCase(b.getAgency()));
 }
+
+public String printAverageZA()
+{
+     List<String> agenciesRating = new ArrayList<>();
+     
+     String output = "";
+    for (Client client: clients)
+    {
+        agenciesRating.add(client.getAgency());
+         
+        
+    }
+   
+    Set<String> uniqueAgenciesRating = new HashSet<String>(agenciesRating);
+     List<String> unique2AgenciesRating = new ArrayList<String>(uniqueAgenciesRating);
+     Collections.sort(unique2AgenciesRating, (String a, String b) -> b.compareToIgnoreCase(a));
+    for (String a : unique2AgenciesRating)
+    {
+       
+        output += getAverageClientRate(a) + "\n";
+        
+    }
+
+    return output;
+}
 public String getAverageClientRate(String agencyName)
 {
      double totalRatings = 0;
