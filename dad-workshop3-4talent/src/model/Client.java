@@ -14,9 +14,8 @@ public class Client {
   
    
         private String name1;
+       private String agency;
        private String client;
-      
-       private String location;
        private String date;
        private String num;
        private String notes;   
@@ -27,8 +26,8 @@ public class Client {
     {
         this.name1 = testString;
         this.aList = name1.split(",");
-        this.client= aList[0];
-        this.location = aList[1];
+        this.agency= aList[0];
+        this.client = aList[1];
         this.date = aList[2];
         this.num = aList[3];
          this.notes = aList[4];
@@ -37,7 +36,7 @@ public class Client {
       @Override
     public String toString() {
    
-        return client + "	"+ location + "	" + date + "	" + num  + "	" + notes+ "\n";
+        return agency + "	"+ client + "	" + date + "	" + num  + "	" + notes+ "\n";
     }
           public String getName1() {
         return name1;
@@ -47,20 +46,20 @@ public class Client {
         this.name1 = name1;
     }
 
+    public String getAgency () {
+        return agency;
+    }
+
+    public void setAgency(String agency) {
+        this.agency = agency;
+    }
+
     public String getClient() {
         return client;
     }
 
     public void setClient(String client) {
         this.client = client;
-    }
-
-    public String getLocation() {
-        return location;
-    }
-
-    public void setLocation(String location) {
-        this.location = location;
     }
 
     public String getDate() {
