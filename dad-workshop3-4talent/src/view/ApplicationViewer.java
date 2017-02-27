@@ -21,7 +21,7 @@ public class ApplicationViewer extends JFrame {
     private JTabbedPane tabs = new JTabbedPane();
      private JTextArea agenciesDisplay = new JTextArea();
         private JTextArea clientsDisplay = new JTextArea();
-   
+        private JTextArea agenciesAverageDisplay = new JTextArea();
   
    
  
@@ -36,9 +36,10 @@ public void jFramePrint()
    
     agenciesDisplay.append(ApplicationModel.getInstance().printAgencies());
     clientsDisplay.append(ApplicationModel.getInstance().printClients());
-  
+    agenciesAverageDisplay.append(ApplicationModel.getInstance().printAverageClientRate());
     tabs.add("Agencies", agenciesDisplay);
     tabs.add("Clients", clientsDisplay);
+    tabs.add("Average Rating", agenciesAverageDisplay);
     this.add(tabs);
  this.setVisible(true);
     
