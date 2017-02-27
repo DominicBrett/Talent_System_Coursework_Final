@@ -171,7 +171,7 @@ public String getAverageClientRate(String agencyName)
      
     }
     totalRatings = totalRatings / aAmount;
-    return "agencyName	" + Double.toString(totalRatings);
+    return agencyName + "	" + Double.toString(totalRatings);
 }
 public String printAverageClientRate()
 {
@@ -190,8 +190,11 @@ public String printAverageClientRate()
      Collections.sort(unique2AgenciesRating, (String a, String b) -> a.compareToIgnoreCase(b));
     for (String a : unique2AgenciesRating)
     {
-        output += a + " " + getAverageClientRate(a) + "\n";
+       
+        output += getAverageClientRate(a) + "\n";
+        System.out.print(getAverageClientRate(a));
     }
+
     return output;
 }
 
